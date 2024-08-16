@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar DropDown</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            height: 15vh;
+            width: 100%;
+            background: #333;
+            position: relative;
+        }
+        .mainUl{
+            list-style-type: none;
+            /* position: absolute; */
+            left: 40%;
+            display: flex;
+            width: 25%;
+            color: white;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            gap: 30px;
+            
+        }
+        .mainUl li{
+            color: blue;
+            font-family: sans-serif;
+            font-size: 1.2rem;
+            cursor: pointer;
+            position: relative;
+            /* border: 1px solid red; */
+            height: 40px;
+        }
+        .homeLi ul{
+            position: absolute;
+            top: 30px;
+            left: -70px;
+            list-style: none;
+            width: 14vw;
+            background: #0000003a;
+            padding: 1rem 0.6rem;
+            height: auto;
+            border-radius: 20px;
+            backdrop-filter: blur(4px);
+            border: 1px solid #333;
+            display: none;
+        }
+        .homeLi:hover > ul{
+            display: block;
+        }
+        .homeLi li{
+            color: red;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .homeLi li:hover{
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="mainUl">
+            <li class="homeLi">Home
+                <ul>
+                    <li>Home-1</li>
+                    <li>Home-2</li>
+                    <li>Home-3</li>
+                </ul>
+                </li>
+            <li class="homeLi">About
+                <ul>
+                    <li>Home-1</li>
+                    <li>Home-2</li>
+                    <li>Home-3</li>
+                </ul>
+            </li>
+            <li class="homeLi">Conatct
+                <ul>
+                    <li>Home-1</li>
+                    <li>Home-2</li>
+                    <li>Home-3</li>
+                </ul>
+            </li>
+            <li class="homeLi">Portfolio
+                <ul>
+                    <li>Home-1</li>
+                    <li>Home-2</li>
+                    <li>Home-3</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
